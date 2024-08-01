@@ -28,4 +28,9 @@ musica2.Duracao = 354;
 albumArcticMonkeys.AdicionarMusica(musica1);
 albumArcticMonkeys.AdicionarMusica(musica2);
 
-albumArcticMonkeys.exibirAlbum();
+// albumArcticMonkeys.exibirAlbum();
+
+Banda arcticMonkeys = new Banda();
+arcticMonkeys.Nome = "Arctic Monkeys";
+arcticMonkeys.AdicionarAlbum(albumArcticMonkeys);
+arcticMonkeys.ExibirDiscografia();
