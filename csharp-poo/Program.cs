@@ -13,24 +13,44 @@
 //musica1.ExibirInformacoes();
 //musica2.ExibirInformacoes();
 
+////////////////////////////////////////////////
 
-Album albumArcticMonkeys = new Album();
-albumArcticMonkeys.Nome = "Whatever People Say I Am, That's What I'm Not ";
+//Banda arcticMonkeys = new Banda("Arctic Monkeys");
 
-Musica musica1 = new Musica();
-musica1.Nome = "The View from the Afternoon";
-musica1.Duracao = 213;
+//Album albumArcticMonkeys = new Album("Whatever People Say I Am, That's What I'm Not ");
 
-Musica musica2 = new Musica();
-musica2.Nome = "I Bet You Look Good on the Dancefloor";
-musica2.Duracao = 354;
+//Musica musica1 = new Musica(arcticMonkeys, "The View from the Afternoon")
+//{
+//    Duracao = 213,
+//    Disponivel = true,
+//};
 
-albumArcticMonkeys.AdicionarMusica(musica1);
-albumArcticMonkeys.AdicionarMusica(musica2);
+//Musica musica2 = new Musica(arcticMonkeys, "I Bet You Look Good on the Dancefloor")
+//{
+//    Duracao = 354,
+//    Disponivel = true,
+//};
 
-// albumArcticMonkeys.exibirAlbum();
+//albumArcticMonkeys.AdicionarMusica(musica1);
+//albumArcticMonkeys.AdicionarMusica(musica2);
+//arcticMonkeys.AdicionarAlbum(albumArcticMonkeys);
 
-Banda arcticMonkeys = new Banda();
-arcticMonkeys.Nome = "Arctic Monkeys";
-arcticMonkeys.AdicionarAlbum(albumArcticMonkeys);
-arcticMonkeys.ExibirDiscografia();
+//musica1.ExibirInformacoes();
+//musica2.ExibirInformacoes();
+//albumArcticMonkeys.exibirAlbum();
+//arcticMonkeys.ExibirDiscografia();
+
+////////////////////////////////////////////////
+
+Episodio ep1 = new (450, 1, "Episódio teste");
+ep1.AdicionarConvidados("Vinicius");
+ep1.AdicionarConvidados("Bruna");
+
+Episodio ep2 = new(560, 2, "Episódio novo");
+ep2.AdicionarConvidados("Gabi");
+ep2.AdicionarConvidados("João");
+
+Podcast podcast1 = new("Flow Podcast", "Igor");
+podcast1.AdicionarEpsodio(ep1);
+podcast1.AdicionarEpsodio(ep2);
+podcast1.ExibirDetalhes();
